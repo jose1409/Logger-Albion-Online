@@ -4,67 +4,41 @@ Logger Albion Online es una herramienta web desarrollada con React y TypeScript,
 
 Su propósito principal es automatizar la visualización, comparación y consolidación del loot obtenido del suelo por cualquier scout o grupo. La aplicación funciona procesando los archivos CSV generados y exportados por la StatisticsAnalysisTool, de manera que toma los registros en bruto, identifica los objetos por su ID y suma sus cantidades para entregar un balance final limpio y fácil de interpretar.
 
-## React Compiler
+## 🚀 Instrucciones de Uso
+Para utilizar la aplicación, sigue estos pasos:
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Exportar los datos: Utiliza la StatisticsAnalysisTool en Albion Online para generar el registro de tu sesión y expórtalo en formato JSON (Recomendable) o CSV.
 
-## Expanding the ESLint configuration
+Cargar el archivo: Abre Logger Albion Online y utiliza la interfaz para subir el archivo CSV que acabas de generar.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+Procesamiento automático: La aplicación leerá el documento de forma instantánea. Si encuentra múltiples entradas para un mismo objeto, sumará las cantidades automáticamente.
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+Visualizar resultados: Revisa el panel de resultados final, donde podrás comparar el botín total obtenido, facilitando así su análisis e inspeccion.
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+## ✨ Funcionalidades Principales
+Procesamiento de Archivos: Capacidad para leer y procesar rápidamente los documentos exportables nativos de la aplicacion StatisticsAnalysisTool.
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+Agrupación Inteligente de Ítems: El algoritmo detecta ítems duplicados en el registro (basado en el ID único del objeto) y consolida las cantidades, evitando que tengas que sumar manualmente.
+
+Visualización de Datos Clara: Interfaz de usuario intuitiva que muestra el resultado final del loot de forma organizada y comparativa.
+
+Stack Tecnológico Moderno: Construida sobre React y Vite para una carga extremadamente rápida, y fuertemente tipada con TypeScript para garantizar un procesamiento de datos sin errores de cálculo o lectura.
+
+## Recuerda que se encuentra desplegado y puedes acceder desde este link [Logger.app](https://logger-albion-online.vercel.app)
+
+## 🛠️ Guia de instalacion en ambiente local
+Si deseas clonar este proyecto y probarlo en tu entorno local, asegúrate de tener [Node.js](https://nodejs.org/) instalado y sigue estos pasos:
+1. **Clona el repositorio:**
 ```
-
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+   bash
+   git clone https://github.com/jose1409/Logger-Albion-Online.git
+   cd Logger-Albion-Online
+```
+2. **Instala las dependencias:**
+```
+   npm install
+```
+3. **Inicia el servidor de desarrollo:**
+```
+   npm run dev
 ```

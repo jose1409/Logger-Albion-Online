@@ -1,4 +1,4 @@
-# React + TypeScript + Vite
+# Puedes acceder desde este link:  [Logger.app](https://logger-albion-online.vercel.app)
 
 Logger Albion Online es una herramienta web desarrollada con React y TypeScript, diseñada específicamente para facilitar la gestión del botín (loot) a los jugadores de Albion Online.
 
@@ -24,7 +24,7 @@ Visualización de Datos Clara: Interfaz de usuario intuitiva que muestra el resu
 
 Stack Tecnológico Moderno: Construida sobre React y Vite para una carga extremadamente rápida, y fuertemente tipada con TypeScript para garantizar un procesamiento de datos sin errores de cálculo o lectura.
 
-## Recuerda que se encuentra desplegado y puedes acceder desde este link [Logger.app](https://logger-albion-online.vercel.app)
+## Recuerda que se encuentra desplegado y puedes acceder desde este link 
 
 ## 🛠️ Guia de instalacion en ambiente local
 Si deseas clonar este proyecto y probarlo en tu entorno local, asegúrate de tener [Node.js](https://nodejs.org/) instalado y sigue estos pasos:

@@ -1,11 +1,8 @@
 # React + TypeScript + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Logger Albion Online es una herramienta web desarrollada con React y TypeScript, diseñada específicamente para facilitar la gestión del botín (loot) a los jugadores de Albion Online.
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+Su propósito principal es automatizar la visualización, comparación y consolidación del loot obtenido del suelo por cualquier scout o grupo. La aplicación funciona procesando los archivos CSV generados y exportados por la StatisticsAnalysisTool, de manera que toma los registros en bruto, identifica los objetos por su ID y suma sus cantidades para entregar un balance final limpio y fácil de interpretar.
 
 ## React Compiler
 
